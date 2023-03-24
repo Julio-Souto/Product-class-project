@@ -53,9 +53,9 @@ function showProducts(){
   let i = 1
   resultado.innerHTML = products.map((product) => {
     totalPrice += Number(product.getTotalPrice)
-    return "Producto "+i+++"<br>"+ product.getData
+    return "\u2022 Producto "+i+++"<br>"+ product.getData
   }).join("<br><br>")
 
-  resultado.innerHTML += "<br><br>Precio Total de los Productos: "+totalPrice.toFixed(2)+"€"
+  resultado.innerHTML += "<br><br>\u2022 Precio Total de los Productos: "+totalPrice.toFixed(2)+"€"
   
 }
