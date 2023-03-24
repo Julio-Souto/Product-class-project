@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body class="container">
+  <div class="col1">
+    <h1>Productos</h1>
+    <form action="#" id="main-form">
+      <label for="nombre">Nombre</label>
+      <input required type="text" name="nombre" id="nombre">
+      <label for="precio">Precio</label>
+      <input type="number" name="precio" id="precio" min="0" step=".01">
+      <label for="tipo">Tipo</label>
+      <select name="tipo" id="tipo">
+        <option value="perecedero">Perecedero</option>
+        <option value="no-perecedero">No perecedero</option>
+      </select>
+      <div id="dias-container">
+        <label for="dias">Dias para caducar</label>
+        <input required type="number" name="dias" id="dias" min="1">
+      </div>
+      <button id="submit">Enviar</button>
+    </form>
+    <p id="error"></p>
+  </div>
+  <div class="col2">
+    <h1>Cesta</h1>
+    <p id="resultado"></p>
+  </div>
+  <script src="main.js" type="module">
+
+  </script>
+</body>
+</html>

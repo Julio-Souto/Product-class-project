@@ -1,0 +1,10 @@
+.oculto{
+  display: none;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+form *{
+  margin-top: .7em;
+}
